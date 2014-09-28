@@ -1,0 +1,77 @@
+* {
+	-webkit-box-sizing: border-box;	/* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;	/* Firefox, other Gecko */
+	box-sizing: border-box;			/* Opera/IE 8+ */
+}
+
+body {
+	position:absolute;
+	left:0px;
+	right:0px;
+	top:0px;
+	bottom:0px;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
+}
+
+.masthead {
+	position: absolute;
+	width: 100%;
+	background-color: #2c2c38;
+	padding: 30px;
+	font-family: 'Cabin', sans-serif;
+	font-weight: 400;
+	font-size: 30px;
+	text-align: center;
+	color: white;
+}
+
+.secondaryweather {
+	margin-left: 20px;
+	display: inline-block;
+	font-family: 'Cabin', sans-serif;
+	font-size: 20px;
+}
+
+.floatleft {
+	width: 50%;
+	height: 100%;
+	float: left;
+	background-color: #d69160;
+}
+
+.floatright {
+	width: 50%;
+	height: 100%;
+	float: right;
+	background-color: #a0dcff;
+}
+
+.weather {
+	width: 300px;
+	margin: 200px auto;
+}
+
+.temperature {
+	display: inline-block;
+	border-radius: 50%;
+	height: 170px;
+	width: 170px;
+	background-color: white;
+	text-align: center;
+	font-family: 'Cabin', sans-serif;
+	font-size: 50px;
+	padding: 60px 0px;
+	vertical-align: middle;
+}
+
+.high {
+	margin-bottom: 10px;
+}
+
+.low {
+	
+}
