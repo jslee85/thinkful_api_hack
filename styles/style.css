@@ -40,19 +40,19 @@ body {
 	width: 50%;
 	height: 100%;
 	float: left;
-	background-color: #d69160;
+	background-color: #edc9a8;
 }
 
 .floatright {
 	width: 50%;
 	height: 100%;
 	float: right;
-	background-color: #a0dcff;
+	background-color: #abc9e8;
 }
 
 .weather {
 	width: 300px;
-	margin: 200px auto;
+	margin: 300px auto;
 }
 
 .temperature {
@@ -63,15 +63,26 @@ body {
 	background-color: white;
 	text-align: center;
 	font-family: 'Cabin', sans-serif;
-	font-size: 50px;
-	padding: 60px 0px;
-	vertical-align: middle;
+	font-size: 60px;
+	padding: 55px 0px;
+}
+
+.yourcity {
+	color: #c4611a;
+}
+
+.yourcitytemp {
+	color: #c4611a;
+}
+
+.sandiego {
+	color: #2c79c5;
+}
+
+.sandiegotemp {
+	color: #2c79c5;
 }
 
 .high {
 	margin-bottom: 10px;
-}
-
-.low {
-	
 }
