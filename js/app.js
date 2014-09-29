@@ -20,6 +20,7 @@ $(document).ready( function() {
 
 	sdWeather();
 
+/*
 	navigator.geolocation.getCurrentPosition(function(location) {
 		var lat = location.coords.latitude,
 			long = location.coords.longitude,
@@ -42,7 +43,7 @@ $(document).ready( function() {
 			}
 		});
 	});
-
+*/
 });
 
 var sdWeather = function() {
