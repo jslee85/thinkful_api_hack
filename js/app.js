@@ -9,9 +9,9 @@ $(document).ready( function() {
 			type: 'GET',
 			dataType: 'jsonp',
 			success: function(data) {
-				$('.sandiegotemp').text(data.currently.temperature + '&#176;');
-				$('.sdhigh').text(data.apparentTemperatureMax + '&#176;');
-				$('.sdlow').text(data.apparentTemperatureMin + '&#176;');				
+				$('.sandiegotemp').text(data.currently.temperature);
+				$('.sdhigh').text(data.daily.apparentTemperatureMax);
+				$('.sdlow').text(data.daily.apparentTemperatureMin);				
 				console.log(data.currently.temperature);
 				console.log(data.currently.apparentTemperatureMin);
 				console.log(data.currently.apparentTemperatureMax);
