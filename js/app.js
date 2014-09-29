@@ -10,8 +10,8 @@ $(document).ready( function() {
 			dataType: 'jsonp',
 			success: function(data) {
 				$('.sandiegotemp').text(data.currently.temperature + '&#176;');
-				$('.sdhigh').text(data.currently.apparentTemperatureMax + '&#176;');
-				$('.sdlow').text(data.currently.apparentTemperatureMin + '&#176;');				
+				$('.sdhigh').text(data.apparentTemperatureMax + '&#176;');
+				$('.sdlow').text(data.apparentTemperatureMin + '&#176;');				
 				console.log(data.currently.temperature);
 				console.log(data.currently.apparentTemperatureMin);
 				console.log(data.currently.apparentTemperatureMax);
