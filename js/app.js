@@ -3,12 +3,11 @@ var getLocation = function (cb) {
 };
 
 $(document).ready(function () {
-	// get current
+	// get coordinates for user location
 	getLocation(function (loc) {
 		getWeather({lat: loc.coords.latitude, long: loc.coords.longitude}, '.yourcity');
 	});
-
-	// get SD
+	// coordinates for San Diego
 	getWeather({lat: 32.7150, long: 117.1625}, '.sandiego');
 });
 
@@ -24,6 +23,7 @@ var getWeather = function (loc, tempDiv) {
 			console.log(data.currently.temperature);
 			console.log(data.daily.data[0].temperatureMax);
 			console.log(data.daily.data[0].temperatureMin);
+
 			$(tempDiv)
 			.find('.temp').html(Math.round(data.currently.temperature) + '&#176;')
 			.end()
@@ -31,6 +31,7 @@ var getWeather = function (loc, tempDiv) {
 			.end()
 			.find('.lowtemp').html(Math.round(data.daily.data[0].temperatureMin) + '&#176;');
 		},
+		
 		error: function () {
 			console.error(arguments[1]);
 		}
