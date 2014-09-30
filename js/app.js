@@ -29,7 +29,7 @@ var getWeather = function (loc, tempDiv) {
 			.end()
 			.find('.hightemp').html(Math.round(data.daily.data[0].temperatureMax) + '&#176;')
 			.end()
-			.find('.lowtemp').html(Math.round(ata.daily.data[0].temperatureMin) + '&#176;');
+			.find('.lowtemp').html(Math.round(data.daily.data[0].temperatureMin) + '&#176;');
 		},
 		error: function () {
 			console.error(arguments[1]);
