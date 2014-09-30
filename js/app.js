@@ -5,7 +5,7 @@ var getLocation = function (cb) {
 $(document).ready(function () {
 	// get current
 	getLocation(function (loc) {
-		getWeather({lat: loc.coords.latitude, long: loc.coords.longitude}, '.yourcitytemp');
+		getWeather({lat: loc.coords.latitude, long: loc.coords.longitude}, '.yourcity');
 	});
 
 	// get SD
@@ -27,9 +27,9 @@ var getWeather = function (loc, tempDiv) {
 			$(tempDiv)
 			.find('.temp').html(Math.round(data.currently.temperature) + '&#176;')
 			.end()
-			.find('.hightemp').html(Math.round(data.currently.temperature) + '&#176;')
+			.find('.hightemp').html(Math.round(data.daily.data[0].temperatureMax) + '&#176;')
 			.end()
-			.find('.lowtemp').html(Math.round(data.currently.temperature) + '&#176;');
+			.find('.lowtemp').html(Math.round(ata.daily.data[0].temperatureMin) + '&#176;');
 		},
 		error: function () {
 			console.error(arguments[1]);
